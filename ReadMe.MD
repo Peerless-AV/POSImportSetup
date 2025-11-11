@@ -6,6 +6,16 @@
 
 ---
 
+## 📜 Version History
+
+| Date       | Author       | Version | Notes                                      |
+|------------|--------------|---------|--------------------------------------------|
+| 11-11-2025 | Dan Zabinski | 1.0     | Initial scaffold: DAC, schema, indexes, doc |
+| 11-11-2025 | Dan Zabinski | 1.1     | Added Task Index aligned to planner protocol |
+| 11-11-2025 | Dan Zabinski | 1.01    | New Screen Required for import scenario |
+
+---
+
 ## 📌 Purpose
 The goal of this customization is to integrate Monthly POS results from the sales automation program into Acumatica for year-over-year tracking and dashboarding.
 
@@ -23,6 +33,10 @@ The goal of this customization is to integrate Monthly POS results from the sale
   - `IX_PRL_POS_Sales_Customer_SaleDate`  
   - `IX_PRL_POS_Sales_PiiPartNumber`  
   - `IX_PRL_POS_Sales_PeriodDate`  
+- **New Screen:**  
+  - **Screen ID:** `DZ.00.00.01`  
+  - **Screen Name:** `POS Entry`  
+  - **Graph:** `PRLSalesEntry` (bound to DAC `PRLSales`)  
 
 ---
 
@@ -74,6 +88,7 @@ The goal of this customization is to integrate Monthly POS results from the sale
 |---|------------------|--------|----------|-------|
 | 1 | Create DAC `PRLSales` and publish schema `PRL_POS_Sales` | ✅ Done | High | Published successfully (Phase 1 start) |
 | 2 | Deploy indexes (`Customer+SaleDate`, `PiiPartNumber`, `PeriodDate`) | ✅ Done | High | Wrapped with `IF NOT EXISTS` |
+| 11 | Build New Screen `PRL301000` with Graph `PRLSalesEntry` | ⏳ Pending | High | Required for Import Scenario `PRL_POS_Import` |
 
 ## 🗂️ Secondary Tasks
 | # | Task Description | Status | Priority | Notes |
