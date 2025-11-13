@@ -2,7 +2,7 @@
 
 **Author:** Dan Zabinski  
 **Creation Date:** 11-11-2025  
-**Customization Name:** PRL_POS_System  
+**Customization Name:** PRL_POS_Sales  
 
 ---
 
