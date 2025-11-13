@@ -13,6 +13,8 @@
 | 11-11-2025 | Dan Zabinski | 1.0     | Initial scaffold: DAC, schema, indexes, doc |
 | 11-11-2025 | Dan Zabinski | 1.1     | Added Task Index aligned to planner protocol |
 | 11-11-2025 | Dan Zabinski | 1.01    | New Screen Required for import scenario |
+| 11-13-2025 | Dan Zabinski | 1.2     | DAC published cleanly, schema verified, index script regenerated |
+
 
 ---
 
