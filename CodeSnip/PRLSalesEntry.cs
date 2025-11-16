@@ -1,0 +1,18 @@
+using System;
+using PX.Data;
+using PX.Data.BQL.Fluent;
+using PX.Data.BQL;
+using PRLPOSSales;
+
+namespace PRLPOSSales
+{
+  public class PRLSalesEntry : PXGraph<PRLSalesEntry>
+  {
+
+    public SelectFrom<PRL_POS_Sales>.View Sales;
+    public PXSave<PRL_POS_Sales> Save;
+    public PXCancel<PRL_POS_Sales> Cancel;
+
+
+  }
+}
