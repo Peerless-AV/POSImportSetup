@@ -1,7 +1,8 @@
 # PRL_POS_System Customization Project
 
 **Author:** Dan Zabinski  
-**Creation Date:** 11-11-2025  
+**Creation Date:** 11-11-2025 
+**Date Updated: 11-17-2025 
 **Customization Name:** PRL_POS_Sales  
 
 ---
