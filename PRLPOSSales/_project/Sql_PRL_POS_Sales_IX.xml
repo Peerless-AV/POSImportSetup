@@ -1,0 +1,31 @@
+﻿<Sql TableName="PRL_POS_Sales_IX" CustomScript="#CDATA">
+    <CDATA name="CustomScript"><![CDATA[-- Index on Customer + SaleDate for search and reporting
+IF NOT EXISTS (
+    SELECT name FROM sys.indexes 
+    WHERE name = 'IX_PRL_POS_Sales_Customer_SaleDate' AND object_id = OBJECT_ID('PRL_POS_Sales')
+)
+BEGIN
+    CREATE NONCLUSTERED INDEX IX_PRL_POS_Sales_Customer_SaleDate
+    ON PRL_POS_Sales (Customer, SaleDate);
+END;
+
+-- Index on PiiPartNumber for part-level lookup
+IF NOT EXISTS (
+    SELECT name FROM sys.indexes 
+    WHERE name = 'IX_PRL_POS_Sales_PiiPartNumber' AND object_id = OBJECT_ID('PRL_POS_Sales')
+)
+BEGIN
+    CREATE NONCLUSTERED INDEX IX_PRL_POS_Sales_PiiPartNumber
+    ON PRL_POS_Sales (PiiPartNumber);
+END;
+
+-- Index on PeriodDate for time-based filtering
+IF NOT EXISTS (
+    SELECT name FROM sys.indexes 
+    WHERE name = 'IX_PRL_POS_Sales_PeriodDate' AND object_id = OBJECT_ID('PRL_POS_Sales')
+)
+BEGIN
+    CREATE NONCLUSTERED INDEX IX_PRL_POS_Sales_PeriodDate
+    ON PRL_POS_Sales (PeriodDate);
+END;]]></CDATA>
+</Sql>
