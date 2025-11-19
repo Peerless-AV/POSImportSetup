@@ -14,13 +14,6 @@ namespace PRLPOSSales
         public virtual int? RecordID { get; set; }
         public abstract class recordID : PX.Data.BQL.BqlInt.Field<recordID> { }
         #endregion
-
-        #region CompanyID
-        [PXDBInt]
-        [PXUIField(DisplayName = "Company ID", Visible = false, Enabled = false)]
-        public virtual int? CompanyID { get; set; }
-        public abstract class companyID : PX.Data.BQL.BqlInt.Field<companyID> { }
-        #endregion
           
         #region branchID
         [PXDBInt]
