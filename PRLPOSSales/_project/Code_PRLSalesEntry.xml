@@ -13,7 +13,7 @@ namespace PRLPOSSales
     public SelectFrom<PRL_POS_Sales>.View Sales;
     public PXSave<PRL_POS_Sales> Save;
     public PXCancel<PRL_POS_Sales> Cancel;
-
+    public PXDelete<PRL_POS_Sales> Delete;
 
   }
 }]]></CDATA>

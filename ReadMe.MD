@@ -2,7 +2,7 @@
 
 **Author:** Dan Zabinski  
 **Creation Date:** 2025-11-11  
-**Last Updated:** 2025-11-19 14:02 CST  
+**Last Updated:** 2025-12-02 09:00 CST  
 **Customization Name:** PRL_POS_Sales  
 
 ---
@@ -16,6 +16,7 @@
 | 2025-11-11 | Dan Zabinski | 1.01    | New Screen Required for import scenario               |
 | 2025-11-13 | Dan Zabinski | 1.2     | DAC published cleanly, schema verified, index script regenerated |
 | 2025-11-19 | Dan Zabinski | 1.3     | Screen `PRL301000` built and published; cleanup protocol verified |
+| 2025-12-02 | Dan Zabinski | 1.4     | Adding Delete Functions so they can be visible in import scenario |
 
 ---
 
@@ -103,6 +104,7 @@ The goal of this customization is to integrate Monthly POS results from the sale
 |---|-------------------------------------------|----------|----------|------------------------------|
 | 3 | Build Import Scenario `PRL_POSLoadImport` | ⏳ Pending | Medium   | Excel-based ingestion        |
 | 4 | Create Generic Inquiry `POS_Sales_GI`     | ⏳ Pending | Medium   | Reporting by Customer, Part, Period |
+| 11| Add Delete Logic                          | ⏳ Pending | Medium   | Required for updates and data cleanup |
 
 ## 🧪 Experiments / Explorations
 
